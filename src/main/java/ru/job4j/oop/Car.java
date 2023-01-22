@@ -1,8 +1,10 @@
 package ru.job4j.oop;
 
 public class Car {
+
     private String brand;
     private String model;
+    private static String carManual = "Инструкция к автомобилю";
 
     public Car(String brand, String model) {
         this.brand = brand;
@@ -41,6 +43,14 @@ public class Car {
         public void getInfo() {
             System.out.println("Модель TripComputer: " + this.model);
             System.out.println("Модель Car: " + Car.this.model);
+        }
+    }
+
+    public static class Manual {
+
+        public static String getManual() {
+            Car car = new Car("Марка", "Модель");
+            return "Модель: " + car.model + ", Инструкция: " + carManual;
         }
     }
 }
