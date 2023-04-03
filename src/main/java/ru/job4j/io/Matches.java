@@ -16,21 +16,15 @@ public class Matches {
             if (matches > 3 || matches < 1 || count < matches) {
                 System.out.println("На столе осталось " + count + " спичек.");
                 System.out.println("Введено некорректное число. Введите число от 1 до 3, но не больше остатка.");
-                turn = !turn;
             } else {
                 count -= matches;
                 System.out.println("На столе осталось " + count + " спичек.");
-                turn = !turn;
-                if (count == 0) {
-                    if (turn) {
-                        System.out.println("Выиграл первый игрок");
-                    } else {
-                        System.out.println("Выиграл второй игрок");
-                    }
-                } else {
-                    turn = !turn;
-                }
             }
+        }
+        if (!turn) {
+            System.out.println("Выиграл первый игрок");
+        } else {
+            System.out.println("Выиграл второй игрок");
         }
     }
 }
