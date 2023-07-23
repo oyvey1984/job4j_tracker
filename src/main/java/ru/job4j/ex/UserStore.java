@@ -7,9 +7,10 @@ public class UserStore {
             if (login.equals(us.getUsername())) {
                 rtr = us;
                 break;
-            } else {
-                throw new UserNotFoundException("User not found");
             }
+        }
+        if (rtr == null) {
+            throw new UserNotFoundException("User not found");
         }
         return rtr;
     }
