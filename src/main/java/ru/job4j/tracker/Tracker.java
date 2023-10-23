@@ -60,6 +60,7 @@ public class Tracker {
         boolean result = index != -1;
         if (result) {
             items.remove(index);
+            size--;
         }
         return result;
     }
