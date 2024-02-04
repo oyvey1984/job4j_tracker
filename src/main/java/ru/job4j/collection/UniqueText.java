@@ -9,12 +9,7 @@ public class UniqueText {
         String[] origin = originText.split(" ");
         String[] text = duplicateText.split(" ");
         HashSet<String> check = new HashSet<>(Arrays.asList(origin));
-        for (String txt : text) {
-            if (!check.contains(txt)) {
-                result = false;
-                break;
-            }
-        }
-        return result;
+        HashSet<String> ch = new HashSet<>(Arrays.asList(text));
+        return check.containsAll(ch);
     }
 }
