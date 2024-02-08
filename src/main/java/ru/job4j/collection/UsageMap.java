@@ -8,6 +8,7 @@ public class UsageMap {
         emailDataBase.put("ayrat.tazetdinov@mail.ru", "Ayrat Tazetdinov");
         emailDataBase.put("oyvey@gmail.com", "Duhast Vaycheslavov");
         emailDataBase.put("a.pop@yandex.ru", "Ivan Petrov");
+        emailDataBase.put("a.pop@yandex.ru", "Artur Ershov");
         for (String key : emailDataBase.keySet()) {
             System.out.println(emailDataBase.get(key));
         }
