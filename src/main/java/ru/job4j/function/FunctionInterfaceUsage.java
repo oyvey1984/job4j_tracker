@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.function;
 
 import java.util.HashSet;
 import java.util.List;
