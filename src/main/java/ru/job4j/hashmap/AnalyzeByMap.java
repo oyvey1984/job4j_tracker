@@ -36,8 +36,7 @@ public class AnalyzeByMap {
         int sumPupils = 0;
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                sumScoreOfSubject.put(subject.name(), sumScoreOfSubject.getOrDefault(subject.name(), 0)
-                        + subject.score());
+                sumScoreOfSubject.merge(subject.name(), subject.score(), Integer::sum);
             }
             sumPupils++;
         }
@@ -66,8 +65,7 @@ public class AnalyzeByMap {
         LinkedList<Label> subjectsLabelForm = new LinkedList<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                subjectsSumScore.put(subject.name(), subjectsSumScore.getOrDefault(subject.name(), 0)
-                        + subject.score());
+                subjectsSumScore.merge(subject.name(), subject.score(), Integer::sum);
             }
         }
         for (String key : subjectsSumScore.keySet()) {
