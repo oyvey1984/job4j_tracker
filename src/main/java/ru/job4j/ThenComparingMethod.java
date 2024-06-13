@@ -54,6 +54,15 @@ public class ThenComparingMethod {
         return Comparator.naturalOrder();
     }
 
+    public static Comparator<User> descByAge1() {
+        return new Comparator<User>() {
+            @Override
+            public int compare(User o1, User o2) {
+                return Integer.compare(o2.getAge(), o1.getAge());
+            }
+        };
+    }
+
     Comparator<User> comparator = (o1, o2) -> Integer.compare(o2.getAge(), o1.getAge());
 
     public static Comparator<User> descByAge() {
