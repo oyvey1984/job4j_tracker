@@ -36,8 +36,14 @@ public class College {
         );
         College college = new College(students);
         Optional<Student> student = college.findByAccount("000001");
-        System.out.println("Найденный студент: " + student.get());
+        student.ifPresentOrElse(
+                s -> System.out.println("Найденный студент: " + s),
+                () -> System.out.println("Студент с аккаунтом 000001 не найден")
+        );
         Optional<Subject> english = college.findBySubjectName("000001", "English");
-        System.out.println("Оценка по найденному предмету: " + english.get().score());
+        english.ifPresentOrElse(
+                subject -> System.out.println("Оценка по найденному предмету: " + subject.score()),
+                () -> System.out.println("Предмет English не найден у студента с аккаунтом 000001")
+        );
     }
 }
