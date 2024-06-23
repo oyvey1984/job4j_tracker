@@ -9,9 +9,7 @@ public class User2 {
     private boolean activated;
     private String gender;
 
-    public User2(String name, String surname, byte age,
-                 String login, String password, boolean activated,
-                 String gender) {
+    public User2() {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -79,7 +77,7 @@ public class User2 {
         }
 
         User2 build() {
-            User2 user2 = new User2(name, surname, age, login, password, activated, gender);
+            User2 user2 = new User2();
             user2.name = name;
             user2.surname = surname;
             user2.age = age;
