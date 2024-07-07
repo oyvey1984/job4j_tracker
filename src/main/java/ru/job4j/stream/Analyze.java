@@ -56,7 +56,7 @@ public class Analyze {
                 )
                 )
                 .max(Comparator.comparing(Tuple::score))
-                .orElse(new Tuple("Лучший ученик не найден", 0.00D));
+                .orElse(null);
     }
 
     public static Tuple bestSubject(Stream<Pupil> stream) {
@@ -64,7 +64,6 @@ public class Analyze {
                         pupil -> pupil.subjects().stream())
                 .collect(
                         Collectors.groupingBy(Subject::name,
-                                LinkedHashMap::new,
                                 Collectors.summingDouble(Subject::score))
                 )
                 .entrySet()
@@ -76,6 +75,6 @@ public class Analyze {
                         )
                 )
                 .max(Comparator.comparing(Tuple::score))
-                .orElse(new Tuple("Лучший предмет не найден", 0.00D));
+                .orElse(null);
     }
 }
