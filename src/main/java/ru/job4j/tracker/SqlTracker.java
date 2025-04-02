@@ -132,7 +132,7 @@ public class SqlTracker implements Store {
             preparedStatement.setInt(1, id);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 if (resultSet.next()) {
-                    item = createItem(resultSet);;
+                    item = createItem(resultSet);
                 }
             }
         } catch (SQLException e) {
