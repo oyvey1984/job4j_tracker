@@ -1,0 +1,57 @@
+2025-04-06 12:21:10.005119+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STORE" not found (this database is empty); SQL statement:
+INSERT INTO store(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 12:21:10.015310+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 12:33:54.533803+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STORE" not found (this database is empty); SQL statement:
+INSERT INTO store(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 12:33:54.545299+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 12:47:03.587682+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STORE" not found (this database is empty); SQL statement:
+INSERT INTO store(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 12:47:03.596705+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 12:58:44.813612+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STORE" not found (this database is empty); SQL statement:
+INSERT INTO store(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 12:58:44.823364+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 13:10:31.156867+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+INSERT INTO items(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 13:10:31.165738+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 13:11:41.504392+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STORE" not found (this database is empty); SQL statement:
+INSERT INTO store(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 13:11:41.513399+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 13:13:17.045732+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+INSERT INTO items(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 13:13:17.055869+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 13:13:38.217894+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+INSERT INTO items(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 13:13:38.227148+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 13:19:31.917105+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+INSERT INTO items(name, created) VALUES (?, ?) [42104-224]
+2025-04-06 13:19:31.928551+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found (this database is empty); SQL statement:
+delete from items [42104-224]
+2025-04-06 13:25:25.066790+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DATABASECHANGELOGLOCK" not found (this database is empty); SQL statement:
+SELECT COUNT(*) FROM DATABASECHANGELOGLOCK [42104-224]
